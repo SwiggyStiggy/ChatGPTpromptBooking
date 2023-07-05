@@ -8,8 +8,8 @@ import requests
 dotenv.load_dotenv('.env')
 API_AI=os.getenv('API_AI')
 openai.api_key=API_AI
-rapid_key = os.getenv(".RAPID_API_KEY")
-rapid_host = os.getenv(".RAPID_API_HOST")
+rapid_key = os.getenv("RAPID_API_KEY")
+rapid_host = os.getenv("RAPID_API_HOST")
 
 def basicGeneration(userPrompt):
     completion=openai.ChatCompletion.create(
